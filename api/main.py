@@ -31,10 +31,42 @@ chat_model = ChatOpenAI(model="qwen/qwen2.5-vl-72b-instruct:free",openai_api_key
 
 # Event Rules and Regulations
 EVENT_RULES = """
-1. Coding Contest: Participants must register before 10 AM.
-2. Hackathon: Team size should be 2-4 members. Submission by 5 PM.
-3. Paper Presentation: Slides must be submitted by 2 PM.
-4. Treasure Hunt: Teams must check in at the auditorium by 11 AM.
+**ThinkQuest-2K25 | 3rd March 2025**  
+
+## UG Events:  
+- **Ad-Zap**: (2-3/team) Topics on the spot, own props allowed.  
+- **Dumb Charades**: (2/team) Topics on the spot, one acts, others guess.  
+- **Quiz**: Solo event, programming & computer technology.  
+
+## PG Events:  
+- **Short Film**: (2/team) 5-10 min, topics: Tech vs Life, Error 404, Digital Trap, Virtual Life, Algorithm of Life. Content in pendrive/laptop.  
+- **Web Design**: Solo event, HTML, CSS, JS.  
+- **VizSpark**: Solo event, tools: Power BI, Tableau, Excel. Time limit: 1 hour, dataset provided on the spot.  
+
+## Registration:  
+- **Fee**: ₹150 per participant  
+- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfylNlEUBPjGjJcP-AWYJolosYwXN5lbkZ7DgwXb1ab1yVdvhA/viewform?usp=sf_link)  
+- **Chatbot**: [thinkquest-2k25.web.app](https://thinkquest-2k25.web.app)  
+- **Website**: [nmc.ac.in](https://www.nmc.ac.in)  
+
+## About the College:  
+Nehru Memorial College (NMC), Puthanampatti, Tamil Nadu. Established in 1967, affiliated with Bharathidasan University, accredited 'A+' by NAAC.  
+
+## Organizing Committee:  
+- **President**: Thiru. Pon. Balasubramanian  
+- **Secretary**: Thiru. Pon. Ravichandran  
+- **Principal**: Dr. A. Venkatesan  
+- **Vice-Principal**: Dr. K.T. Tamilmani  
+- **Coordinator**: Dr. M. Meenakshi Sundaram  
+- **Convenors**: Dr. V. Umadevi, Dr. S. Mala, Dr. V. Priya  
+
+## Student Committee Members:  
+V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T. Udhayanithi, A. Siva, S. Jagathesan, D. Kabilan, P. Devika  
+
+## Contact:  
+- **T. Udhayanithi**: 9597540931  
+- **R. BalaMurugan**: 7904765141  
+- **V. RameshKumar**: 7010554788  
 """
 
 # Define a sample route
