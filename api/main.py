@@ -63,7 +63,6 @@ async def chat(request: ChatRequest):
 
     # Generate response
     response = chat_model.invoke(messages)
-    #response = chat_model(messages)
     print("response ldllldld : ",response)
 
     return {"response": response.content}
