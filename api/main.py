@@ -27,7 +27,7 @@ print("api key=",API_KEY)
 
 
 # Initialize LangChain Chat Model using OpenRouter
-chat_model = ChatOpenAI(model="qwen/qwen2.5-vl-72b-instruct:free",openai_api_key=API_KEY,openai_api_base="https://openrouter.ai/api/v1")
+chat_model = ChatOpenAI(model="mistralai/mistral-small-24b-instruct-2501:free",openai_api_key=API_KEY,openai_api_base="https://openrouter.ai/api/v1")
 
 # Event Rules and Regulations
 EVENT_RULES = """
@@ -66,7 +66,7 @@ V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T
 ## Contact:  
 - **T. Udhayanithi**: 9597540931  
 - **R. BalaMurugan**: 7904765141  
-- **V. RameshKumar**: 7010554788  
+- **V. RameshKumar**: 7010554788  (creater of this website)
 """
 
 # Define a sample route
@@ -89,7 +89,7 @@ async def chat(request: ChatRequest):
 
     # Structure messages for LangChain
     messages = [
-        SystemMessage(content=f"You are an event assistant for OPTRA-2K25. Use the following rules: {EVENT_RULES}"),
+        SystemMessage(content=f"You are an event assistant for Thinkquest-2K25. Use the following rules: {EVENT_RULES}"),
         HumanMessage(content=user_message)
     ]
 
