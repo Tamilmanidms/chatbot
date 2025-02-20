@@ -22,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 # Load OpenRouter API key
-API_KEY ="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"
+API_KEY =os.getenv("OPENROUTER_API_KEY")
 print("api key=",API_KEY)
 
 
