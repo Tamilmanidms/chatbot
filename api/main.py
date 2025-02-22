@@ -23,11 +23,10 @@ app.add_middleware(
 )
 # Load OpenRouter API key
 API_KEY =os.getenv("OPENROUTER_API_KEY")
-print("api key=",API_KEY)
 
 
 # Initialize LangChain Chat Model using OpenRouter
-chat_model = ChatOpenAI(model="mistralai/mistral-small-24b-instruct-2501:free",openai_api_key=API_KEY,openai_api_base="https://openrouter.ai/api/v1")
+chat_model = ChatOpenAI(model="mistralai/mistral-7b-instruct:free",openai_api_key=API_KEY,openai_api_base="https://openrouter.ai/api/v1",max_tokens=250)
 
 # Event Rules and Regulations
 EVENT_RULES = """
@@ -45,9 +44,10 @@ EVENT_RULES = """
 
 ## Registration:  
 - **Fee**: ₹150 per participant  
-- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfylNlEUBPjGjJcP-AWYJolosYwXN5lbkZ7DgwXb1ab1yVdvhA/viewform?usp=sf_link)  
+- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQbNUps4ZjFJS20xnHrmBmtFSCfKUA_p6ygzuiBdazKs7cSQ/viewform) 
 - **Chatbot**: [thinkquest-2k25.web.app](https://thinkquest-2k25.web.app)  
 - **Website**: [nmc.ac.in](https://www.nmc.ac.in)  
+
 
 ## About the College:  
 Nehru Memorial College (NMC), Puthanampatti, Tamil Nadu. Established in 1967, affiliated with Bharathidasan University, accredited 'A+' by NAAC.  
@@ -59,14 +59,17 @@ Nehru Memorial College (NMC), Puthanampatti, Tamil Nadu. Established in 1967, af
 - **Vice-Principal**: Dr. K.T. Tamilmani  
 - **Coordinator**: Dr. M. Meenakshi Sundaram  
 - **Convenors**: Dr. V. Umadevi, Dr. S. Mala, Dr. V. Priya  
+- **Chief Guest** : Madhuprasad R (General Manager)
 
 ## Student Committee Members:  
 V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T. Udhayanithi, A. Siva, S. Jagathesan, D. Kabilan, P. Devika  
 
-## Contact:  
+## Contact incharges or organizing members:  
 - **T. Udhayanithi**: 9597540931  
 - **R. BalaMurugan**: 7904765141  
-- **V. RameshKumar**: 7010554788  (creater of this website)
+- **V. RameshKumar**: 7010554788  
+## Creator of this chatbot and Webiste:
+- ** V. Rameshkumar** : [Linked In](https://www.linkedin.com/in/rameshkumar-v)
 """
 
 # Define a sample route
