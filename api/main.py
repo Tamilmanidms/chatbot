@@ -49,7 +49,7 @@ EVENT_RULES = """
 
 ## Registration:  
 - **Fee**: ₹150 per participant  
-- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQbNUps4ZjFJS20xnHrmBmtFSCfKUA_p6ygzuiBdazKs7cSQ/viewform)  
+- **Form Link**: [GoogleForm](https://docs.google.com/forms/d/e/1FAIpQLScQbNUps4ZjFJS20xnHrmBmtFSCfKUA_p6ygzuiBdazKs7cSQ/viewform)  
 - **Chatbot**: [thinkquest-2k25.web.app](https://thinkquest-2k25.web.app)  
 - **Website**: [nmc.ac.in](https://www.nmc.ac.in)  
 
@@ -71,7 +71,7 @@ V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T
 ## Contact incharges or organizing members:  
 - **T. Udhayanithi**: 9597540931  
 - **R. BalaMurugan**: 7904765141  
-- **V. RameshKumar**: 7010554788  
+- **V. RameshKumar**: 7010554788  [LinkedIn](https://www.linkedin.com/in/rameshkumar-v)  
 
 ## Creator of this chatbot and Website:  
 - **V. Rameshkumar**: [LinkedIn](https://www.linkedin.com/in/rameshkumar-v)  
