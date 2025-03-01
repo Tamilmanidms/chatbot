@@ -5,14 +5,14 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-<<<<<<< HEAD
+
 from langchain_openai.chat_models import ChatOpenAI
 
-=======
+
 from langchain_openai import ChatOpenAI
 
 load_dotenv()
->>>>>>> 905c0775afb684fd1d87cd1fb375f072a3c8c166
+
 from fastapi.middleware.cors import CORSMiddleware
 
 
