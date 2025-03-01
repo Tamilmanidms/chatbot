@@ -38,16 +38,15 @@ EVENT_RULES = """
 - **Quiz**: Solo event, programming & computer technology.  
 
 ## PG Events:  
-- **Short Film**: (2/team) 5-10 min, topics: Tech vs Life, Error 404, Digital Trap, Virtual Life, Algorithm of Life. Content in pendrive/laptop.  
+- **Short Film**: (2/team) 5-10 min, topics: Tech vs Life, Error 404, Digital Trap, Virtual Life. Content in pendrive/laptop.  
 - **Web Design**: Solo event, HTML, CSS, JS.  
 - **VizSpark**: Solo event, tools: Power BI, Tableau, Excel. Time limit: 1 hour, dataset provided on the spot.  
 
 ## Registration:  
 - **Fee**: ₹150 per participant  
-- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQbNUps4ZjFJS20xnHrmBmtFSCfKUA_p6ygzuiBdazKs7cSQ/viewform) 
+- **Form Link**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQbNUps4ZjFJS20xnHrmBmtFSCfKUA_p6ygzuiBdazKs7cSQ/viewform)  
 - **Chatbot**: [thinkquest-2k25.web.app](https://thinkquest-2k25.web.app)  
 - **Website**: [nmc.ac.in](https://www.nmc.ac.in)  
-
 
 ## About the College:  
 Nehru Memorial College (NMC), Puthanampatti, Tamil Nadu. Established in 1967, affiliated with Bharathidasan University, accredited 'A+' by NAAC.  
@@ -59,7 +58,7 @@ Nehru Memorial College (NMC), Puthanampatti, Tamil Nadu. Established in 1967, af
 - **Vice-Principal**: Dr. K.T. Tamilmani  
 - **Coordinator**: Dr. M. Meenakshi Sundaram  
 - **Convenors**: Dr. V. Umadevi, Dr. S. Mala, Dr. V. Priya  
-- **Chief Guest** : Madhuprasad R (General Manager)
+- **Chief Guest**: Madhuprasad R (General Manager)  
 
 ## Student Committee Members:  
 V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T. Udhayanithi, A. Siva, S. Jagathesan, D. Kabilan, P. Devika  
@@ -68,8 +67,9 @@ V. RameshKumar, R. BalaMurugan, S. NireshKumar, M. Farvash Musraf, R. Bhuvana, T
 - **T. Udhayanithi**: 9597540931  
 - **R. BalaMurugan**: 7904765141  
 - **V. RameshKumar**: 7010554788  
-## Creator of this chatbot and Webiste:
-- ** V. Rameshkumar** : [Linked In](https://www.linkedin.com/in/rameshkumar-v)
+
+## Creator of this chatbot and Website:  
+- **V. Rameshkumar**: [LinkedIn](https://www.linkedin.com/in/rameshkumar-v)  
 """
 
 # Define a sample route
@@ -90,10 +90,17 @@ async def chat(request: ChatRequest):
     if not user_message:
         raise HTTPException(status_code=400, detail="Message is required")
 
+    system_prompt = (
+        "You are a chatbot assistant for ThinkQuest-2K25, an event happening on 3rd March 2025."
+        " Answer queries accurately using the event details below. Keep responses short and relevant."
+        " If unsure, ask for clarification instead of guessing."
+    )
+
     # Structure messages for LangChain
     messages = [
-        SystemMessage(content=f"You are an event assistant for Thinkquest-2K25. Use the following rules: {EVENT_RULES}"),
-        HumanMessage(content=user_message)
+        SystemMessage(content=system_prompt),
+        SystemMessage(content=EVENT_RULES),
+        HumanMessage(content=user_message),
     ]
 
     # Generate response
